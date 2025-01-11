@@ -1,0 +1,60 @@
+:root {
+    --text-color: #7fcdbe;
+    --background-color: #0e0b2c;
+    --text-accent-color: #314f74;
+    --bg-accent-color: #205056;
+    --font-size: 20px;
+    --font-size-bigger: var(--font-size)*1.5;
+}
+
+* {
+    font-size: var(--font-size);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+}
+
+.center {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+*:hover {
+    cursor: default;
+}
+
+button:hover, a:hover, input:hover {
+    cursor:pointer;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.imgContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.imgContainer img {
+    width: 33%;
+    height: auto;
+}
