@@ -1,8 +1,10 @@
 :root {
     --text-color: #d0f3ec;
-    --background-color: #0e0b2c;
+    --background-color: #08061a;
+    /* --background-color-darker: #141417; */
+
     --text-accent-color: #314f74;
-    --bg-accent-color: #205056;
+    --bg-accent-color: #14333d;
     --font-size: 20px;
     --font-size-bigger: var(--font-size)*1.5;
 }
@@ -30,6 +32,15 @@ h3 {
     font-size: calc(var(--font-size)*0.8);
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background-color: var(--background-color-darker);
+    border-radius: 0px 0px 30px 30px;
+}
+
 body, html {
     width: 100%;
     height: 100vh;
@@ -49,6 +60,10 @@ body, html {
     float: right;
 }
 
+.clear {
+    float: none;
+}
+
 *:hover {
     cursor: default;
 }
@@ -62,14 +77,14 @@ button:hover, a:hover, input:hover {
 }
 
 .imgContainer {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin: 20px 0px;
+    /* display: flex; */
+    width: 50%;
+    /* justify-content: space-around; */
+    /* margin: 20px 0px; */
 }
 
 .imgContainer img {
-    width: 33%;
+    width: 50%;
     height: auto;
 }
 
@@ -82,12 +97,55 @@ button {
 }
 
 button:hover {
-    background-color: red;
+    filter: brightness(1.30);
 }
 
 
 button:active{
-    /* border: ; */
-    background-color: brightness(1.30);
-    background-color: lighten(1.30);
+    filter: brightness(1.50);
+}
+
+.flex {
+    display: flex;
+}
+
+.btns {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.btns button {
+    margin: 1em 2em;
+}
+
+.form {
+    width: 50%;
+}
+
+
+.form .pair{
+    display: flex;
+    justify-content: start;
+    width: 20%;
+}
+
+input[type='checkbox'] {
+    height: var(--font-size);
+    width: var(--font-size);
+    accent-color: var(--bg-accent-color);
+    margin: 0 0.3em 0 0.3em;
+
+}
+
+.pairContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.fromLine {
+    margin: 20px 0;
 }
