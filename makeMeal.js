@@ -36,9 +36,11 @@ function genMeal(random) {
                 anwser += pStart + (input.name[0]).toUpperCase() + (input.name).slice(1) + ": " + val + pEnd; 
             }
         });
+
+        if (noneChecked) {
+            anwser = pStart + "No categories checked..." + pEnd;
+        }
     }
-    if (noneChecked) {
-        anwser = pStart + "No categories checked..." + pEnd;
-    }
+   
     document.getElementById("anwser").innerHTML = anwser;
 }
